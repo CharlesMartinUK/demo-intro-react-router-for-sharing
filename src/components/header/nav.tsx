@@ -6,9 +6,9 @@ const Nav:React.FC = () => (
     <ul  style={{width:'100%'}}
             className='is-flex is-flex-direction-row is-justify-content-space-evenly is-justify-content-space-evenly'>
         <li><NavLink to='/'> Home</NavLink> </li>
-        <li><NavLink to='/complaints'>Complaints</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-       
+        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/help'>Help</NavLink></li>
+        <li><NavLink to='/products'>Product</NavLink></li>
     </ul>
 </nav>
 );
