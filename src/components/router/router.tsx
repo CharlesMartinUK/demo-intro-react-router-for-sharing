@@ -1,20 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Home from '../home/home'
-/*
-import Contact from '../contact/contact'
-
-<Route path = 'contact' element={<Contact/>} />
-			<Route path = 'complaints' element={<Complaints/>} />
-			
-import Complaints from '../complaints/complaints'
-
-			
-*/
-
 import Help from '../help/help'
 import MainLayout from '../layouts/main_layouts'
 import Products from '../products/products'
+import Product from '../products/product/product'
 import NotFound from '../not_found/not_found'
 import About from '../about/about'
 
@@ -26,6 +16,7 @@ const Router:React.FC = () => (
 			<Route path='/help' element={<Help/>} />
 			<Route path='/about' element={<About/>} />
 			<Route path='/products' element={<Products/>} />
+			<Route path='/products/:productId' element={<Product/>} />
 			<Route path = '*' element={<NotFound/>} /> 
 			
 		</Route>
